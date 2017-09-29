@@ -17,7 +17,9 @@ Ce fichier charge les éléments suivants:
 
 ## Fonctionnement
 
-((à définir))
+Description du projet:
+
+60 point de couleur noir sont placé en 6 ligne et 10 colone. Lorsqu'une seconde passe la couleur d'un point défile de ligne en ligne, jaune. Apres la première minutes passé les points passes de noir a bleu mais le défilement restant jaune. Sur la gauche de ses colones se trouve 12 cercles, ces même cercles se remplice de rose chaque heure.
 
 Automne 2017  
 Eracom, Lausanne
