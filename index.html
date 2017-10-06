@@ -6,14 +6,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/clocks.js"></script>
+        <style>
+          #grid {
+            height: 100vh;
+            padding: 1em;
+            display: grid;
+            /* 10 rangées de 6 cases */
+            grid-template-columns: repeat(6, 1fr);
+  				  grid-template-rows: repeat(10, 1fr);
+          }
+
+          .circle {
+            width: 3vmin;
+            height: 3vmin;
+            background: black;
+            border-radius: 50%;
+            margin: auto;
+          }
+        </style>
+
     </head>
     <body>
-    
-        <h1>Salut, je suis un titre</h1>
-        <p>Ciao, je suis un paragraphe</p>
 
-        <time class="temps" id="horloge">00:00:00</time>
-    
+        <div id="grid">
+        </div>
+
+    	<script>
+
+      // création de 60 cercles
+
+      var i;
+      for (i = 0; i < 60; i++) {
+
+        var circle = document.createElement('div');
+        circle.className = "circle";
+      	circle.id = 'circle'+i;
+        document.getElementById("grid").appendChild(circle);
+
+      }
+
+    	</script>
     </body>
 </html>
